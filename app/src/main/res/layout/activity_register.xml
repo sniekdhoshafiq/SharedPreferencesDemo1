@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#E3CFC8"
+    tools:context=".Register"
+    >
+
+    <EditText
+        android:id="@+id/regNameET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter name"
+        android:inputType="text"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:id="@+id/regEmailET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:layout_margin="5dp"
+        />
+
+    <EditText
+        android:id="@+id/regPasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:layout_margin="5dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/genderRG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/maleRB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:layout_weight="1"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/femaleRB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:layout_weight="1"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/registerBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:id="@+id/openLoginBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="If already registered, click here"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>
